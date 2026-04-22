@@ -11,16 +11,11 @@ export const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ opacity: { duration: 1.2 } }}
       >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
+        <img
+          src="/Untitled_design.gif"
+          alt="Hero Background"
           className="w-full h-full object-cover high-def-video"
-        >
-          <source src="https://bxmgsjtsxygxfgvpnnjh.supabase.co/storage/v1/object/public/PoolWebsite%20Template/gentle-looping-animation-with-subtle-water-ripplin.mp4" type="video/mp4" />
-        </video>
+        />
         {/* Overlay — slightly darker for mobile text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-luxury-navy/70 via-luxury-navy/40 to-transparent pointer-events-none" />
       </motion.div>
