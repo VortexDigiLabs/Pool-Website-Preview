@@ -39,7 +39,7 @@ export const Hero = () => {
             transition={{ duration: 1.5, ease: "easeOut" }}
             className="text-luxury-aquamarine font-bold text-[10px] uppercase mb-6"
           >
-            SINCE 2012
+            TRUSTED SINCE 2005
           </motion.p>
 
           <motion.h2
@@ -48,9 +48,9 @@ export const Hero = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl italic text-white leading-[1.1] mb-4 tracking-tighter overflow-wrap-anywhere"
           >
-            Professional{' '}
+            Keep Your Pool{' '}
             <span className="relative inline-block">
-              <span className="text-luxury-aquamarine italic">Pool Care</span>
+              <span className="text-luxury-aquamarine italic">Crystal Clear</span>
               <motion.span
                 className="absolute -bottom-2 left-0 w-full h-px bg-luxury-aquamarine/50"
                 initial={{ width: 0 }}
@@ -58,7 +58,7 @@ export const Hero = () => {
                 transition={{ duration: 1.5, delay: 1 }}
               />
             </span>{' '}
-            You Can Trust
+            — All Year Round
           </motion.h2>
 
           <motion.p
@@ -82,7 +82,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-luxury-navy translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             </button>
             <button className="border border-white/20 backdrop-blur-sm text-white px-10 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white/10 transition-all min-h-[44px]">
-              READ REVIEWS
+              SEE WHAT WE DO
             </button>
           </motion.div>
         </motion.div>
@@ -108,7 +108,7 @@ export const Hero = () => {
             className="w-full px-4 py-3 bg-gray-100 rounded-lg text-xs focus:ring-1 focus:ring-luxury-premier outline-none transition-all placeholder:text-gray-400 min-h-[44px]"
           />
           <button className="w-full bg-luxury-navy text-white py-3 rounded-lg font-bold text-[10px] uppercase tracking-widest hover:bg-luxury-premier transition-colors shadow-lg active:scale-95 min-h-[44px]">
-            Request Estimate
+            GET A FREE QUOTE
           </button>
         </form>
       </motion.div>
