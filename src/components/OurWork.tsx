@@ -15,8 +15,8 @@ const works = [
     afterCaption: "Swimmable in 72 hours",
   },
   {
-    before: "https://images.unsplash.com/photo-1519642571242-b91b5c464c51?auto=format&fit=crop&q=80&w=800",
-    after: "https://images.unsplash.com/photo-1563245450-4286121b65e9?auto=format&fit=crop&q=80&w=800",
+    before: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
+    after: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800",
     beforeCaption: "Before winter preparation",
     afterCaption: "Protected and ready for summer",
   }
@@ -24,14 +24,22 @@ const works = [
 
 export const OurWork = () => {
   return (
-    <section className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-luxury-navy relative overflow-hidden">
+      {/* Premium Background Elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+        <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-luxury-premier/10 blur-[120px]" />
+        <div className="absolute bottom-[10%] right-[0%] w-[40%] h-[60%] rounded-full bg-luxury-aquamarine/5 blur-[150px]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 mix-blend-overlay" />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <p className="text-luxury-premier font-bold tracking-[0.2em] uppercase text-sm mb-2">Real results from real pools we maintain</p>
-          <h2 className="font-serif text-4xl md:text-5xl text-luxury-navy">OUR WORK</h2>
+          <p className="text-luxury-aquamarine font-bold tracking-[0.2em] uppercase text-xs mb-3">Real results from real pools we maintain</p>
+          <h2 className="font-serif text-4xl md:text-5xl text-white mb-4">OUR WORK</h2>
+          <div className="w-24 h-1 bg-luxury-aquamarine mx-auto rounded-full opacity-50" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {works.map((work, index) => (
             <motion.div
               key={index}
@@ -39,37 +47,40 @@ export const OurWork = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-4 group relative"
             >
+              {/* Card Background Glow */}
+              <div className="absolute inset-0 bg-luxury-premier/20 rounded-2xl blur-xl group-hover:bg-luxury-aquamarine/20 transition-colors duration-500 -z-10" />
+              
               {/* Before */}
-              <div className="relative group rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-white/20 transition-colors duration-500">
                 <img
                   src={work.before}
                   alt="Before"
-                  className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 left-4 bg-red-500/90 text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-widest backdrop-blur-sm">
+                <div className="absolute top-4 left-4 bg-red-500/90 text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-lg">
                   BEFORE
                 </div>
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                  <p className="text-white text-sm font-medium">{work.beforeCaption}</p>
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 pt-12">
+                  <p className="text-white text-sm font-medium tracking-wide">{work.beforeCaption}</p>
                 </div>
               </div>
 
               {/* After */}
-              <div className="relative group rounded-2xl overflow-hidden shadow-lg border-4 border-luxury-aquamarine/20">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-luxury-aquamarine/40 group-hover:border-luxury-aquamarine transition-colors duration-500">
                 <img
                   src={work.after}
                   alt="After"
-                  className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 left-4 bg-luxury-aquamarine text-luxury-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-md">
+                <div className="absolute top-4 left-4 bg-luxury-aquamarine text-luxury-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-xl">
                   AFTER
                 </div>
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                  <p className="text-white text-sm font-medium">{work.afterCaption}</p>
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 pt-12">
+                  <p className="text-white text-sm font-medium tracking-wide">{work.afterCaption}</p>
                 </div>
               </div>
             </motion.div>
