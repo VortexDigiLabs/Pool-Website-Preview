@@ -44,11 +44,15 @@ export const Footer = () => {
               <a href="#faq" className="hover:text-luxury-aquamarine transition-colors italic leading-relaxed">Frequently Asked Questions</a>
               <p className="text-gray-400 flex items-start space-x-3">
                 <MapPin size={16} className="text-luxury-aquamarine flex-shrink-0" />
-                <span>Serving Johannesburg, Pretoria, and surrounding areas</span>
+                <span>42 Sandton Drive, Sandton, Johannesburg</span>
               </p>
               <p className="text-gray-400 flex items-start space-x-3">
                 <Mail size={16} className="text-luxury-aquamarine flex-shrink-0" />
                 <span>info@crystalclearpools.co.za</span>
+              </p>
+              <p className="text-gray-400 flex items-start space-x-3">
+                <span className="text-luxury-aquamarine flex-shrink-0 font-bold">📞</span>
+                <span>+27 82 123 4567</span>
               </p>
             </nav>
           </div>
@@ -67,15 +71,15 @@ export const Footer = () => {
               </button>
             </div>
             <p className="text-[10px] text-gray-500 uppercase tracking-widest leading-loose">
-              Receive pool care tips and exclusive seasonal offers.
+              GET POOL CARE TIPS, SEASONAL MAINTENANCE REMINDERS, AND EXCLUSIVE OFFERS.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-[9px] text-white/40 space-y-4 md:space-y-0 uppercase tracking-[0.3em] font-bold">
-          <p>© {year} CRYSTALCLEARPOOLS.CO.ZA | Built by Vortex Digi Labs</p>
+          <p>© {year} Crystal Clear Pools | Professional Pool Maintenance</p>
           <div className="flex space-x-8">
-            <span>WHATSAPP: 082 000 0000</span>
+            <a href="https://wa.me/27821234567" className="hover:text-white transition-colors">WHATSAPP: +27 82 123 4567</a>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>

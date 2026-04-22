@@ -27,12 +27,12 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <WinterCTA />
         <Services />
         <Specials />
         <Testimonials />
         <OurWork />
         <LeadCapture />
-        <WinterCTA />
       </main>
       <Footer />
       <ChatBot />

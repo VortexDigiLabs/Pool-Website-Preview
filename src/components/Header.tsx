@@ -74,10 +74,10 @@ export const Header = () => {
           )}>
             <Phone size={14} className="text-luxury-aquamarine" />
             <a
-              href="tel:0820000000"
+              href="tel:+27821234567"
               className="hover:text-luxury-aquamarine transition-colors text-[11px] tracking-wider"
             >
-              082 000 0000
+              082 123 4567
             </a>
           </div>
         </nav>
@@ -85,14 +85,11 @@ export const Header = () => {
         {/* Mobile: Phone + Hamburger */}
         <div className="flex lg:hidden items-center space-x-3">
           <a
-            href="tel:0820000000"
-            className={cn(
-              "flex items-center space-x-1 font-bold text-xs",
-              isScrolled ? "text-luxury-navy" : "text-white"
-            )}
+            href="tel:+27821234567"
+            className="flex items-center space-x-2 font-bold text-xs bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg transition-colors min-h-[44px]"
           >
-            <Phone size={14} className="text-luxury-aquamarine" />
-            <span>082 000 0000</span>
+            <Phone size={14} />
+            <span>CALL NOW</span>
           </a>
           <button
             className="p-2 rounded-md min-h-[44px] min-w-[44px] flex items-center justify-center"
@@ -125,12 +122,12 @@ export const Header = () => {
         <div className="pt-8 flex flex-col items-center space-y-4">
           <div className="flex items-center space-x-2 text-white text-xl font-bold">
             <Phone size={24} className="text-luxury-aquamarine" />
-            <a href="tel:0820000000" className="hover:text-luxury-aquamarine transition-colors">
-              Call Now: 082 000 0000
+            <a href="tel:+27821234567" className="hover:text-luxury-aquamarine transition-colors">
+              Call Now: 082 123 4567
             </a>
           </div>
           <button className="bg-luxury-aquamarine text-luxury-navy px-8 py-3 rounded-full font-bold text-lg min-h-[44px]">
-            GET QUOTE
+            GET A FREE QUOTE
           </button>
         </div>
       </div>
