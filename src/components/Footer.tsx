@@ -11,11 +11,11 @@ export const Footer = () => {
           {/* Brand Info */}
           <div className="space-y-6">
             <div>
-              <h2 className="font-serif text-3xl font-bold tracking-widest uppercase">AZURE</h2>
-              <p className="text-[10px] tracking-[0.3em] text-luxury-aquamarine font-bold">POOLS & SPAS</p>
+              <h2 className="font-serif text-3xl font-bold tracking-widest uppercase">CRYSTAL CLEAR</h2>
+              <p className="text-[10px] tracking-[0.3em] text-luxury-aquamarine font-bold">POOL SERVICE</p>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed italic">
-              Crafting South Africa&apos;s most exquisite water experiences since 2005. Master builders of luxury lifestyles.
+              Keeping your pool clean, safe, and ready to enjoy since 2012. Professional pool care you can trust.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Instagram, Twitter].map((Icon, idx) => (
@@ -32,7 +32,7 @@ export const Footer = () => {
             <nav className="flex flex-col space-y-4 text-sm font-medium">
               <a href="#" className="hover:text-luxury-aquamarine transition-colors">Home</a>
               <a href="#services" className="hover:text-luxury-aquamarine transition-colors">Services</a>
-              <a href="#products" className="hover:text-luxury-aquamarine transition-colors">Products</a>
+              <a href="#pricing" className="hover:text-luxury-aquamarine transition-colors">Pricing</a>
               <a href="#contact" className="hover:text-luxury-aquamarine transition-colors">Contact</a>
             </nav>
           </div>
@@ -44,11 +44,11 @@ export const Footer = () => {
               <a href="#faq" className="hover:text-luxury-aquamarine transition-colors italic leading-relaxed">Frequently Asked Questions</a>
               <p className="text-gray-400 flex items-start space-x-3">
                 <MapPin size={16} className="text-luxury-aquamarine flex-shrink-0" />
-                <span>42 Sandton Drive, JHB</span>
+                <span>Serving Johannesburg, Pretoria, and surrounding areas</span>
               </p>
               <p className="text-gray-400 flex items-start space-x-3">
                 <Mail size={16} className="text-luxury-aquamarine flex-shrink-0" />
-                <span>YOUR DETAILS HERE</span>
+                <span>info@crystalclearpools.co.za</span>
               </p>
             </nav>
           </div>
@@ -67,15 +67,15 @@ export const Footer = () => {
               </button>
             </div>
             <p className="text-[10px] text-gray-500 uppercase tracking-widest leading-loose">
-              Receive curated design inspiration and exclusive seasonal offers.
+              Receive pool care tips and exclusive seasonal offers.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-[9px] text-white/40 space-y-4 md:space-y-0 uppercase tracking-[0.3em] font-bold">
-          <p>© 2025 AZUREPOOLS.CO.ZA | CRAFTED BY YOUR DETAILS HERE</p>
+          <p>© {year} CRYSTALCLEARPOOLS.CO.ZA | Built by Vortex Digi Labs</p>
           <div className="flex space-x-8">
-            <span>WHATSAPP: YOUR DETAILS HERE</span>
+            <span>WHATSAPP: 082 000 0000</span>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>

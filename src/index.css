@@ -37,14 +37,23 @@
   }
 }
 
-
 @layer base {
-  html {
+  html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
     @apply antialiased text-luxury-navy bg-luxury-white;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    overflow-wrap: break-word;
   }
 }
 
