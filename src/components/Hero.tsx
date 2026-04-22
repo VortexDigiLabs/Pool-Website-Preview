@@ -19,7 +19,7 @@ export const Hero = () => {
           preload="auto"
           className="w-full h-full object-cover high-def-video"
         >
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src="/download.mp4" type="video/mp4" />
         </video>
         {/* Overlay — slightly darker for mobile text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-luxury-navy/70 via-luxury-navy/40 to-transparent pointer-events-none" />
