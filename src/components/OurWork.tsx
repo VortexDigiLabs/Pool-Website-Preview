@@ -55,17 +55,11 @@ export const OurWork = () => {
               {/* Before */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-white/20 transition-colors duration-500">
                 <img
-                  src={work.before}
+                  src={index === 2 ? "/dirty-pool-before.png" : work.before}
                   alt="Before"
                   className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 left-4 bg-red-500/90 text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-lg">
-                  BEFORE
-                </div>
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 pt-12">
-                  <p className="text-white text-sm font-medium tracking-wide">{work.beforeCaption}</p>
-                </div>
               </div>
 
               {/* After */}
@@ -76,12 +70,6 @@ export const OurWork = () => {
                   className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 left-4 bg-luxury-aquamarine text-luxury-navy px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-xl">
-                  AFTER
-                </div>
-                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-5 pt-12">
-                  <p className="text-white text-sm font-medium tracking-wide">{work.afterCaption}</p>
-                </div>
               </div>
             </motion.div>
           ))}

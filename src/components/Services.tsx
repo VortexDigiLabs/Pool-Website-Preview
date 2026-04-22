@@ -56,19 +56,36 @@ export const Services = () => {
                 key={service.title}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ 
+                  y: -10,
+                  transition: { duration: 0.3, ease: "easeOut" }
+                }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group bg-luxury-foam rounded-2xl p-8 text-left hover:shadow-xl transition-all duration-300 border border-transparent hover:border-luxury-aquamarine/20"
+                className="group relative bg-white rounded-3xl p-10 text-left transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,229,255,0.15)] border border-gray-100 hover:border-luxury-aquamarine/30"
               >
-                <div className="w-14 h-14 rounded-xl bg-luxury-premier/10 flex items-center justify-center mb-6 group-hover:bg-luxury-premier group-hover:scale-110 transition-all duration-300">
-                  <Icon size={26} className="text-luxury-premier group-hover:text-white transition-colors" />
+                {/* Interactive Gradient Background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-luxury-premier/5 to-luxury-aquamarine/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
+                
+                {/* Floating Icon Container */}
+                <div className="relative w-16 h-16 rounded-2xl bg-luxury-foam flex items-center justify-center mb-8 group-hover:bg-luxury-premier group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-sm group-hover:shadow-luxury-premier/30">
+                  <Icon size={28} className="text-luxury-premier group-hover:text-white transition-all duration-500" />
+                  
+                  {/* Subtle Glow Behind Icon */}
+                  <div className="absolute inset-0 rounded-2xl bg-luxury-premier/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
                 </div>
-                <h3 className="font-bold text-base tracking-wide text-luxury-navy mb-3 uppercase">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-gray-500 leading-relaxed group-hover:text-gray-700 transition-colors">
-                  {service.description}
-                </p>
+
+                <div className="relative z-10">
+                  <h3 className="font-serif text-xl tracking-tight text-luxury-navy mb-4 group-hover:text-luxury-premier transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 leading-relaxed group-hover:text-gray-600 transition-colors duration-300">
+                    {service.description}
+                  </p>
+                  
+                  {/* Decorative Bottom Bar */}
+                  <div className="mt-8 w-8 h-1 bg-luxury-foam group-hover:w-full group-hover:bg-luxury-aquamarine/30 transition-all duration-500 rounded-full" />
+                </div>
               </motion.div>
             );
           })}
